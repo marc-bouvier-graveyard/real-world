@@ -8,6 +8,7 @@ npm audit fix
 vue add eslint
 # Choose which lint config you want (I picked Standard)
 # Lint on save
+vue add unit-jest
 ```
 
 Create the app using localhost:8000
