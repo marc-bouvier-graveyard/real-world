@@ -9,7 +9,19 @@ vue add eslint
 # Choose which lint config you want (I picked Standard)
 # Lint on save
 vue add unit-jest
+npm install
+npm run serve
 ```
 
-Create the app using localhost:8000
+Create a vue.config.js containing the following to fix "Invalid Host header" when running on gitpod.
+```
+module.exports = {
+    devServer: {
+        //fix "Invalid Host header" when running on gitpod
+        disableHostCheck: true
+    }
+}
+```
+
+Create the app using localhost:8080
 
